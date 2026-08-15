@@ -1,6 +1,6 @@
 {
   "name": "dsh-notepad",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DSH Web GUI 右侧常驻记事本：钉在页面最右边的便签面板，自动保存到 ~/.dsh/notepad/notes.md，Agent 可通过 notepad_read/notepad_write 读写。",
   "type": "module",
   "main": "lib/index.js",
