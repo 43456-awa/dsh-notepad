@@ -24,7 +24,8 @@ dsh plugin --profile web add dsh-notepad
 放在树外会够不到 `profiles/node_modules` 里宿主自带的 `@deepseek-ai/*`）：
 
 ```sh
-dsh plugin --profile web add link:C:/Users/a1390/.dsh/profiles/dsh-notepad
+# <yourProfileDir> 为 ~/.dsh/profiles/ 下的实际路径
+dsh plugin --profile web add link:<yourProfileDir>/dsh-notepad
 ```
 
 ## 结构
