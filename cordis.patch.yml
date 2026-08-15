@@ -1,0 +1,4 @@
+# dsh-notepad 组合层：把宿主插件行插入组合。
+- insert:
+    - id: dsh-notepad
+      name: dsh-notepad

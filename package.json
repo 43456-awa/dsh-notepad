@@ -1,0 +1,55 @@
+{
+  "name": "dsh-notepad",
+  "version": "0.1.0",
+  "description": "DSH Web GUI 右侧常驻记事本：钉在页面最右边的便签面板，自动保存到 ~/.dsh/notepad/notes.md，Agent 可通过 notepad_read/notepad_write 读写。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/client.js",
+    "prepublishOnly": "node --check lib/index.js && node --check lib/client.js"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-home-paths": ">=0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": ">=0.1.0-rc.6",
+    "react": "^18.2.0"
+  },
+  "author": "a1390",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a1390/dsh-notepad.git"
+  },
+  "homepage": "https://github.com/a1390/dsh-notepad",
+  "bugs": {
+    "url": "https://github.com/a1390/dsh-notepad/issues"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "notepad",
+    "notes",
+    "sticky",
+    "plugin"
+  ]
+}
